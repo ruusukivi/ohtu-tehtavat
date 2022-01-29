@@ -21,8 +21,9 @@ def main():
             )
             players.append(player)
 
-    print(f"Players from FIN {datetime.datetime.now()}")
+    print(f"Players from FIN {datetime.datetime.now()}\n")
 
+    players.sort(key=lambda x: x.total, reverse=True)
     for player in players:
         print(player)
 
