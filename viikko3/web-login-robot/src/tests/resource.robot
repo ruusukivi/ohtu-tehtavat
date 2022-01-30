@@ -20,8 +20,11 @@ Login Page Should Be Open
     Title Should Be  Login
 
 Main Page Should Be Open
-    Title Should Be  Welcome to Ohtu Application!
+    Title Should Be  Ohtu Application main page
 
+Welcome Page Should Be Open
+    Title Should Be  Welcome to Ohtu Application!
+    
 Register Page Should Be Open
     Title Should Be  Register
 
