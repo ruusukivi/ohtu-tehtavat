@@ -1,3 +1,4 @@
+from re import L
 from tuote import Tuote
 from ostos import Ostos
 
@@ -23,11 +24,12 @@ class Ostoskori:
         # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
     def lisaa_tuote(self, lisattava: Tuote):
-        if lisattava in self.sisalto:
-            self.sisalto.lisattava.muuta_lukumaaraa(1)
-        else:
-            ostos = Ostos(lisattava)
-            self.sisalto.append(ostos)
+        for ostos in self.sisalto:
+            if ostos.tuotteen_nimi() == lisattava.nimi():
+                ostos.muuta_lukumaaraa(1)
+                return
+        ostos = Ostos(lisattava)
+        self.sisalto.append(ostos)
         
 
     def poista_tuote(self, poistettava: Tuote):
