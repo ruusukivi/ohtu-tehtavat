@@ -1,4 +1,4 @@
-#Retrospektiivitekniikat - viikko 5, harjoitus 6
+# Retrospektiivitekniikat - viikko 5, harjoitus 6
 
 Ketterissä menetelmissä yksi keskeinen toiminnan kehittämisen tekniikka on retrospektiivi, jossa tiimi pohtii miten yhdessä tekemistä voisi jatkuvasti hieman parantaa. Retrojen järjestämiseen löytyy monia hyviä valmiita malleja ja työkaluja. 
 
