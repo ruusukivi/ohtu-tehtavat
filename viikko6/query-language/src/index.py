@@ -34,6 +34,25 @@ def main():
     for player in stats.matches(matcher2):
         print(player)
 
+    print('------ OR -------')
+
+    matcher3 = (
+        query
+        .oneOf(
+            query.playsIn("PHI")
+            .hasAtLeast(10, "assists")
+            .hasFewerThan(5, "goals")
+            .build(),
+            query.playsIn("EDM")
+            .hasAtLeast(40, "points")
+            .build()
+        )
+        .build()
+    )
+
+    for player in stats.matches(matcher3):
+        print(player)
+
 
 if __name__ == "__main__":
     main()
